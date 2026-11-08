@@ -1,1 +1,22 @@
-{"author":"Original procedural geometry created for Meridian Noir","synthetic":true,"generator":"Three.js, scripts/scene.js; headless Microsoft Edge via Playwright","artDirection":"Ultra-premium matte-black mechanical chronograph, subtle metallic edges, soft blue accents, deep black studio background, soft rim lighting, controlled metal reflections, luxury engineering aesthetic. No text, no labels, no logos on renders.","motion":"Smoothly transition from the assembled watch to an exploded view; components gently separate in alignment in 3D space.","outputs":{"image-1.png":"Assembled frame 0","image-2.png":"Exploded frame 100","frames/*.webp":"101 rendered frames, 0..100, encoded by ffmpeg libwebp quality 83","transition.mp4":"Same sequence at 25fps, H.264, CRF20"},"font":{"name":"Manrope","source":"https://github.com/google/fonts/tree/main/ofl/manrope","license":"SIL Open Font License, included as fonts/OFL.txt"},"technicalLimitations":"Stylized mechanical study, not a functional watchmaking blueprint."}
+{
+  "synthetic": true,
+  "author": "Original procedural Three.js geometry for Meridian Noir",
+  "source": "scripts/scene.js",
+  "frames": "public/sequence/frame_000_delay-0.04s.webp through frame_179_delay-0.04s.webp",
+  "count": 180,
+  "format": "lossless WebP, 720x800; original PNG renders cropped without cutting through geometry",
+  "choreography": "0% assembled; 30% expanding; 58-64% fully exploded; 90% reassembling; 95-100% assembled",
+  "encoding": "Pillow lossless WebP preserves the exact sampled background; ffmpeg H.264 transition film",
+  "background": {
+    "sourcePixel": [
+      7,
+      9,
+      12
+    ],
+    "css": "#07090c",
+    "verified": "first-frame corner pixel matches CSS exactly"
+  },
+  "artDirection": "Matte black, metallic rim lighting, soft blue accents, luxury tech; no text/logos in renders",
+  "guide": "https://noocap.notion.site/Complete-Workflow-AI-Chip-Scroll-Animation-Landing-Page-341508e99dda80618d88e989402ac749",
+  "fontLicense": "Manrope, SIL OFL in assets/fonts/OFL.txt"
+}

@@ -1,24 +1,35 @@
 # Meridian Noir — Exploded Chronograph
 
-Original fictional mechanical watch, built as a scroll-linked disassembly study.
+Fictional mechanical chronograph, opening and reassembling through a scroll-linked canvas sequence.
 
-## Guide and substitution
-Following **AI Chip Scroll-Animation Landing Page**, shared by Lindsay Gonzales, guide 07 in [AI Web Design Library](https://raj-microsoft.github.io/ai-web-design-library/). [Workflow link](https://shorturl.at/HJtYN). Guide 13 duplicates the same method (shared by Rourke Sefton-Minns).
+## Guide and substitutions
+Following **Complete Workflow: AI Chip Scroll-Animation Landing Page** by noocap, credited to Lindsay Gonzales in guide 07 of [AI Web Design Library](https://raj-microsoft.github.io/ai-web-design-library/); guide 13 duplicates the method. [Full original guide](https://noocap.notion.site/Complete-Workflow-AI-Chip-Scroll-Animation-Landing-Page-341508e99dda80618d88e989402ac749).
 
-Google Whisk/Flow require sign-in, so this project replaces them with original procedural Three.js geometry and headless Edge rendering. Assembled frame + exploded frame → 101-frame transition → scroll-linked playback. ffmpeg also generates a transition MP4. No sign-in, paid generation or keys used.
+Google Whisk/Flow require sign-in; original Three.js procedural geometry plus headless Edge replaces those services. React/Vite replaces Next.js for GitHub Pages static output. Pillow encodes lossless WebP (preserving the precisely sampled black); ffmpeg encodes the downloadable transition film. No signup, paid generation or keys used.
+
+## Actual workflow
+1. Render assembled and exploded keyframes with Three.js (`scripts/scene.js`).
+2. Render transition with headless Edge (`scripts/render.cjs`).
+3. Generate **180 actual WebP files** in `public/sequence/`, with an actual-file-count manifest (`scripts/sequence.py`). Expansion, exploded hold, reassembly are baked into the sequence.
+4. React/Framer Motion `useScroll` maps 0..1 to 0..179 and draws frames to canvas on scroll ticks.
+5. All frames preload behind a spinner; any failure shows Retry and keeps the canvas hidden.
+6. Story: 0% centred title, 30% left copy, 60% right copy, 90% centred CTA during reassembly.
+7. Static Vite build (`base: '/exploded-chronograph/'`) in `/docs` for Pages.
 
 ## Reproduce
 ```
 npm ci
 node scripts/render.cjs
-ffmpeg -y -framerate 25 -i .renders/%03d.png -c:v libwebp -quality 83 -start_number 0 assets/frames/%03d.webp
-ffmpeg -y -framerate 25 -i .renders/%03d.png -c:v libx264 -pix_fmt yuv420p -crf 20 -movflags +faststart assets/transition.mp4
-node scripts/build.cjs
+python scripts/sequence.py
+ffmpeg -y -framerate 25 -i public/sequence/frame_%03d_delay-0.04s.webp -c:v libx264 -pix_fmt yuv420p -crf 20 -movflags +faststart public/assets/transition.mp4
+npm run build
 node scripts/verify.cjs
 ```
-Copy `.renders/000.png` and `.renders/100.png` to `assets/image-1.png` and `assets/image-2.png`. Rendering uses the standard Windows Edge installation path; adapt it for other hosts. GitHub Pages serves `/docs` on `main`.
+Python requires Pillow. Rendering/verification uses the standard Windows Edge installation path; adapt for another host. `npm run dev` starts Vite.
 
-## Controls and accessibility
-Scroll in either direction, choose one of seven layer stops, or pause the animation. Reduced motion starts paused and condenses the scroll section. All controls are native keyboard-accessible elements with visible focus. Self-hosted Manrope includes its SIL OFL license. All watch artwork is synthetic; this is not a real product or watchmaking blueprint.
+## Accessibility and evidence
+Contains full image on mobile, touch-action: pan-y, text above canvas, visible focus, native chapter buttons, pause toggle, reduced-motion static/manual mode. Captures and automated checks cover 320, 390, 1440px, forward/reverse scroll, 180-frame loading, all story beats, reduced motion and a simulated broken image.
 
-Asset provenance: `assets/provenance.json`. Design notes: `DESIGN.md`. Verification evidence: `.impeccable/review/verification.json`.
+Background first-render pixel = RGB(7,9,12), CSS #07090c. Lossless frames preserve this exact colour. Assets and typography provenance: `public/assets/provenance.json`. Design notes: `DESIGN.md`. Verification: `.impeccable/review/verification.json`.
+
+This is stylized synthetic geometry, not a production calibre or functional engineering blueprint.

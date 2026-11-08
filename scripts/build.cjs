@@ -1,1 +1,0 @@
-const fs=require('fs'),path=require('path');fs.mkdirSync('docs',{recursive:true});for(const f of ['index.html','style.css','app.js'])fs.copyFileSync(f,path.join('docs',f));fs.cpSync('assets','docs/assets',{recursive:true});fs.writeFileSync('docs/.nojekyll','');console.log('Static Pages output written to docs');

@@ -1,1 +1,69 @@
-{"schemaVersion":2,"generatedAt":"2026-11-09T00:15:00+01:00","title":"Design System: Meridian Noir","extensions":{"shadows":[],"motion":[{"name":"scroll-linked","value":"101 frames, requestAnimationFrame","purpose":"Disassembly follows document scroll; explicit buttons work without motion."}],"breakpoints":[{"name":"mobile","value":"800px"}],"typographyMeta":{"display":{"displayName":"Display","purpose":"Light, wide hero lettering."}}},"components":[{"name":"Motion button","kind":"button","refersTo":"motion-button","description":"Pause or resume the scroll interaction.","html":"<button class=\"ds-motion\">Pause motion</button>","css":".ds-motion{background:transparent;color:#d0d9e3;border:1px solid #445362;padding:7px 12px;font:11px sans-serif;cursor:pointer}.ds-motion:hover{border-color:#a2c9f3}.ds-motion:focus-visible{outline:2px solid #a2c9f3;outline-offset:6px}"},{"name":"Layer rail","kind":"nav","description":"Explicitly addressable layers.","html":"<nav class=\"ds-rail\"><button aria-pressed=\"true\">Complete</button><button>Case</button><button>Gear train</button></nav>","css":".ds-rail{display:flex;gap:24px;border-top:1px solid #303741}.ds-rail button{background:none;color:#aab4c3;border:0;border-top:1px solid transparent;padding:19px 0 10px;font:11px sans-serif;cursor:pointer}.ds-rail button[aria-pressed=true]{color:#d6e8fc;border-color:#a2c9f3}.ds-rail button:hover{color:white}.ds-rail button:focus-visible{outline:2px solid #a2c9f3;outline-offset:6px}"}],"narrative":{"northStar":"Cinematic disassembly study","overview":"An object in a black studio, revealed with precision. The interface stays quiet so the moving mechanical architecture owns the experience.","keyCharacteristics":["Original dimensional imagery","Quiet interface","Explicit motion control"],"rules":[],"dos":["Do keep the object visible before any animation begins.","Do keep imagery synthetic and clearly disclosed.","Do use a single scroll-linked motion grammar."],"donts":["Don't add commercial performance claims to this fictional watch.","Don't hide content behind entrance animations."]}}
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-09T00:15:00+01:00",
+  "title": "Design System: Meridian Noir",
+  "extensions": {
+    "shadows": [],
+    "motion": [
+      {
+        "name": "canvas-scroll",
+        "value": "Framer Motion useScroll; 180 frames",
+        "purpose": "Direct progress-to-frame mapping after complete preload; static explicit states for reduced motion."
+      },
+      {
+        "name": "text-fade",
+        "value": "opacity .16s ease-out",
+        "purpose": "Eased chapter overlay fades."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile",
+        "value": "800px"
+      }
+    ],
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Light, wide hero lettering."
+      }
+    }
+  },
+  "components": [
+    {
+      "name": "Motion button",
+      "kind": "button",
+      "refersTo": "motion-button",
+      "description": "Pause or resume the scroll interaction.",
+      "html": "<button class=\"ds-motion\">Pause motion</button>",
+      "css": ".ds-motion{background:transparent;color:#d0d9e3;border:1px solid #445362;padding:7px 12px;font:11px sans-serif;cursor:pointer}.ds-motion:hover{border-color:#a2c9f3}.ds-motion:focus-visible{outline:2px solid #a2c9f3;outline-offset:6px}"
+    },
+    {
+      "name": "Layer rail",
+      "kind": "nav",
+      "description": "Explicitly addressable layers.",
+      "html": "<nav class=\"ds-rail\"><button aria-pressed=\"true\">Complete</button><button>Case</button><button>Gear train</button></nav>",
+      "css": ".ds-rail{display:flex;gap:24px;border-top:1px solid #303741}.ds-rail button{background:none;color:#aab4c3;border:0;border-top:1px solid transparent;padding:19px 0 10px;font:11px sans-serif;cursor:pointer}.ds-rail button[aria-pressed=true]{color:#d6e8fc;border-color:#a2c9f3}.ds-rail button:hover{color:white}.ds-rail button:focus-visible{outline:2px solid #a2c9f3;outline-offset:6px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Cinematic disassembly study",
+    "overview": "An object in a black studio, revealed with precision. The interface stays quiet so the moving mechanical architecture owns the experience.",
+    "keyCharacteristics": [
+      "Original 3D geometry",
+      "Preloaded contain-fit canvas",
+      "Centred / left / right / centred chapter choreography",
+      "Exact sampled studio black"
+    ],
+    "rules": [],
+    "dos": [
+      "Do keep the object visible before any animation begins.",
+      "Do keep imagery synthetic and clearly disclosed.",
+      "Do use a single scroll-linked motion grammar."
+    ],
+    "donts": [
+      "Don't add commercial performance claims to this fictional watch.",
+      "Don't hide content behind entrance animations."
+    ]
+  }
+}
