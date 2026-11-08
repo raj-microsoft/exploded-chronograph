@@ -1,0 +1,30 @@
+[
+  {
+    "width": 1440,
+    "http": 200,
+    "overflow": false,
+    "endFrame": 100,
+    "startFrame": 0,
+    "pause": true,
+    "gearFrame": 70,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "http": 200,
+    "overflow": false,
+    "endFrame": 100,
+    "startFrame": 0,
+    "pause": true,
+    "gearFrame": 70,
+    "errors": []
+  },
+  {
+    "reduced": {
+      "paused": true,
+      "frame": 0,
+      "storyHeight": 844,
+      "manualFrame": 86
+    }
+  }
+]
