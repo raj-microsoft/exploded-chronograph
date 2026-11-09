@@ -90,7 +90,7 @@ components:
 **Creative North Star: "Cinematic disassembly study"**
 An object in a black studio, revealed with precision. The interface stays quiet so the moving mechanical architecture owns the experience. Descriptive language is inferred from the explicit art-direction brief, not an additional user interview.
 ## Colors
-Studio black and porcelain carry the page. Rim blue marks focus, selected layers, and metal illumination. A raised dark surface separates the closing passage.
+Studio black and porcelain carry the page. The studio token is the source fallback; before revealing frames, --studio-background receives the browser-decoded first-frame corner RGB(8,9,13), shared by page and canvas. Rim blue marks focus, selected layers, and metal illumination. A raised dark surface separates the closing passage.
 ## Typography
 Self-hosted Manrope gives the display a light, wide, precise voice. Large text is regular weight; body text uses the same family. Functional text never falls below 11px.
 ## Layout
