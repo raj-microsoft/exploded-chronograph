@@ -5,7 +5,7 @@ Fictional photorealistic chronograph opening and reassembling through a scroll-l
 ## Guide and AI provenance
 Following [Complete Workflow: AI Chip Scroll-Animation Landing Page](https://noocap.notion.site/Complete-Workflow-AI-Chip-Scroll-Animation-Landing-Page-341508e99dda80618d88e989402ac749) by noocap (library guide 07 / 13).
 
-Start and end references were generated with **ChatGPT image generation**. **Gemini Veo** generated an eight-second film from the start image using the owner's authorized browser session in a new chat. This interface exposed no last-frame control: the generated ending is not an exact match to the supplied end reference. All imagery is AI-generated, not a photograph of a manufactured watch or an engineering blueprint.
+Start and end references were generated with **ChatGPT image generation**. **Gemini Veo** generated a ten-second film (the opening eight seconds are used for the scroll transition) from the start image using the owner's authorized browser session in a new chat. This interface exposed no last-frame control: the generated ending is not an exact match to the supplied end reference. All imagery is AI-generated, not a photograph of a manufactured watch or an engineering blueprint.
 
 ## Playback
 - 180 WebP files, 880 × 496, quality 78; sequence payload **3,165,016 bytes**.
