@@ -4,3 +4,4 @@
 canvas{left:18%;top:32%;width:64%;height:52%}
 @media(max-width:800px){canvas{left:0;top:36%;width:100%;height:43%}}
 canvas{mix-blend-mode:lighten}
+.stage{background:var(--studio-background,#07090c)}

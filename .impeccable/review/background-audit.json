@@ -3,13 +3,13 @@
     "width": 320,
     "count": 180,
     "decodedCorners": [
-      "8,9,13"
+      "13,13,13"
     ],
-    "canvasCorner": "8,9,13",
-    "pageBackground": "rgb(8, 9, 13)",
-    "configured": "rgb(8, 9, 13)",
+    "canvasCorner": "13,13,13",
+    "pageBackground": "rgb(13, 13, 13)",
+    "configured": "rgb(13, 13, 13)",
     "allFramesLoaded": true,
-    "resourceBytes": 3814367,
+    "resourceBytes": 3366323,
     "overflow": false,
     "failed": []
   },
@@ -17,13 +17,13 @@
     "width": 390,
     "count": 180,
     "decodedCorners": [
-      "8,9,13"
+      "13,13,13"
     ],
-    "canvasCorner": "8,9,13",
-    "pageBackground": "rgb(8, 9, 13)",
-    "configured": "rgb(8, 9, 13)",
+    "canvasCorner": "13,13,13",
+    "pageBackground": "rgb(13, 13, 13)",
+    "configured": "rgb(13, 13, 13)",
     "allFramesLoaded": true,
-    "resourceBytes": 3809225,
+    "resourceBytes": 3361181,
     "overflow": false,
     "failed": []
   },
@@ -31,13 +31,13 @@
     "width": 1440,
     "count": 180,
     "decodedCorners": [
-      "8,9,13"
+      "13,13,13"
     ],
-    "canvasCorner": "8,9,13",
-    "pageBackground": "rgb(8, 9, 13)",
-    "configured": "rgb(8, 9, 13)",
+    "canvasCorner": "13,13,13",
+    "pageBackground": "rgb(13, 13, 13)",
+    "configured": "rgb(13, 13, 13)",
     "allFramesLoaded": true,
-    "resourceBytes": 3809225,
+    "resourceBytes": 3361181,
     "overflow": false,
     "failed": []
   }
