@@ -1,0 +1,44 @@
+[
+  {
+    "width": 320,
+    "count": 180,
+    "decodedCorners": [
+      "8,9,13"
+    ],
+    "canvasCorner": "8,9,13",
+    "pageBackground": "rgb(8, 9, 13)",
+    "configured": "rgb(8, 9, 13)",
+    "allFramesLoaded": true,
+    "resourceBytes": 3814367,
+    "overflow": false,
+    "failed": []
+  },
+  {
+    "width": 390,
+    "count": 180,
+    "decodedCorners": [
+      "8,9,13"
+    ],
+    "canvasCorner": "8,9,13",
+    "pageBackground": "rgb(8, 9, 13)",
+    "configured": "rgb(8, 9, 13)",
+    "allFramesLoaded": true,
+    "resourceBytes": 3809225,
+    "overflow": false,
+    "failed": []
+  },
+  {
+    "width": 1440,
+    "count": 180,
+    "decodedCorners": [
+      "8,9,13"
+    ],
+    "canvasCorner": "8,9,13",
+    "pageBackground": "rgb(8, 9, 13)",
+    "configured": "rgb(8, 9, 13)",
+    "allFramesLoaded": true,
+    "resourceBytes": 3809225,
+    "overflow": false,
+    "failed": []
+  }
+]
